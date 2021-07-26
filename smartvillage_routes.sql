@@ -1,0 +1,1 @@
+INSERT INTO routes (id, title, image, image_map, content, created_at, updated_at) VALUES (1, 'gsgsgs', 'artonwheels_1617356836.png', 'artonwheels_1617356836.png', 'sgdgdsg', '2021-04-02 09:47:16', '2021-04-02 09:47:16');

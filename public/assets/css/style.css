@@ -1,0 +1,52 @@
+/*custom*/
+.table td img {
+    width: 70px;
+    height: 70px;
+}
+
+.route_img {
+    width: 100%;
+    position: relative
+}
+
+.close, .close_st {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    cursor: pointer;
+}
+.general{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+.file{
+    position: absolute;
+    top: -10%;
+    right: -48%
+}
+.all{
+    position: absolute;
+    top: 20%;
+    right: 25%
+}
+.all>form{
+    position: absolute;
+    top: 20%;
+    right: 25%;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    margin-left: 70%;
+}
+.plus{
+    margin-left: 10px;
+}
+
+.x {
+    width: 525px;
+}

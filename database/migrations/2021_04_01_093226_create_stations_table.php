@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateStationsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('stations', function (Blueprint $table) {
+            $table->id();
+            $table->integer('route_id');
+            $table->integer('arr_id');
+            $table->text('title');
+            $table->text('content')->nullable();
+            $table->string('image')->nullable();
+            $table->integer('lang');
+            $table->integer('lat');
+            $table->json('map_coordinates')->nullable();
+            $table->tinyInteger('status')->default(1);
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('stations');
+    }
+}
